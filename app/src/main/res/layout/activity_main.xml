@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp">
+
+        <TextView
+            android:id="@+id/bilskor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="60sp"
+            android:gravity="center"
+            android:background="#00E2FF"
+            android:textColor="#000000">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/kulskor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:textSize="60sp"
+            android:gravity="center"
+            android:background="#00E2FF"
+            android:textColor="#040101">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/bilgisayar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Bilgisayar"
+            android:layout_weight="1"
+            android:gravity="center">
+
+        </TextView>
+        <TextView
+            android:id="@+id/oyuncu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Oyuncu"
+            android:layout_weight="1"
+            android:gravity="center">
+
+        </TextView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/bilsec"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Bilgisayar Secimi"
+        android:gravity="center">
+
+    </TextView>
+    <TextView
+        android:id="@+id/kazanan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Kazanan"
+        android:gravity="center">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/tas"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:src="@drawable/tas"
+            android:scaleType="fitXY"
+            android:onClick="bas"
+            android:contentDescription="Enter How Much Cookies You Want">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/kagit"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:src="@drawable/kagit"
+            android:scaleType="fitXY"
+            android:onClick="bas"
+            android:contentDescription="Enter How Much Cookies You Want">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/makas"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:src="@drawable/makas"
+            android:scaleType="fitXY"
+            android:onClick="bas"
+            android:contentDescription="Enter How Much Cookies You Want">
+
+        </ImageButton>
+
+    </LinearLayout>
+</LinearLayout>
